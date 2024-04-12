@@ -10,40 +10,42 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-pic logo-pic" src="images/logo-pic.svg" alt="Логотип сайта" width="70" height="59">
-    </a>
-    <a href="" class="main-header__logo">
-      <img class="main-header__logo-text logo-text" src="images/logo-text.svg" width="118" height="59">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-container">
-    <section class="hero-section">
-      <div class="hero-section__wrapper">
-        <h1 class="hero-section__title section-title">Функциональное питание для котов</h1>
-        <p class="hero-section__desc">Занялся собой? Займись котом!</p>
-        <a href="#" class="primary-button button">Подбор программы</a>
-        <div class="hero-section__image-container">
-          <img class="hero-section__image" src="images/hero-top.png" alt="Cat Energy со вкусом курицы">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo">
+        <img class="main-header__logo-pic logo-pic" src="images/logo-pic.svg" alt="Логотип сайта" width="70" height="59">
+      </a>
+      <a href="" class="main-header__logo">
+        <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="" width="118" height="59">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero-section">
+        <div class="hero-section__wrapper">
+          <h1 class="hero-section__title section-title">Функциональное питание для котов</h1>
+          <p class="hero-section__desc">Занялся собой? Займись котом!</p>
+          <a href="#" class="primary-button button">Подбор программы</a>
+          <div class="hero-section__image-container">
+            <img class="hero-section__image" src="images/hero-top.png" alt="Cat Energy со вкусом курицы">
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+  </header>
+  <main class="main">
     <section class="diet">
       <div class="diet__wrapper">
         <ul class="diet__list">
@@ -115,8 +117,8 @@
             <p class="stats__text"><span>затраты на питание:</span><span>15000 руб</span></p>
           </div>
         </div>
-        <div class="exaple__slider-wrapper">
-          <div class=" example__slider slider">
+        <div class="example__slider slider">
+          <div class="slider__wrapper">
             <div class="slider__before"><img src="images/tablet-before-1x.png" alt="Борис ДО>"></div>
             <div class="slider__after"><img src="images/tablet-after-1x.png" alt="Борис после"></div>
             <div class="slider__scroller"></div>
@@ -127,15 +129,18 @@
     <section class="location">
       <div class="location__wrapper">
         <div class="location__contacts contacts">
-          <b class="location__title">приглашаем к сотрудничеству дилеров!</b>
+          <h2 class="location__title">приглашаем к сотрудничеству дилеров!</h2>
           <div>
             <p class="location__text">
-              <adress>ул. Большая Конюшенная, д. 19/8</adress>
+              ул. Большая Конюшенная, д. 19/8
             </p>
             <p class="location__text">
-              <adress>Санкт-Петербург</adress>
+              Санкт-Петербург
             </p>
           </div>
+        </div>
+        <div class="location__map">
+          <img src="#" alt="">
         </div>
       </div>
     </section>
@@ -161,7 +166,8 @@
       <div class="footer__copyright copyright">
         <p class="copyright__text">HTML Academy</p>
         <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.6426 0.515754L13.5 0.5L0 1.90733V26.5129L13.5 34.5L27 26.5129V1.90733L13.6426 0.515754ZM25.2344 25.5151L13.5 32.4573L1.76561 25.5151V15.4293L13.4507 22.3451L13.4701 23.5984L5.45351 18.8548L5.44295 20.0801L13.4894 24.8885L13.5088 26.175L5.46408 21.4174L5.45351 22.6427L13.5 27.4511L21.6239 22.6182V21.3929V17.409L25.2432 15.2595L25.2344 25.5151ZM25.2344 13.9519L22.0147 15.8319L20.5325 16.7071L13.4666 12.5201L13.456 13.7454L19.4957 17.318L19.4429 17.3495L19.3126 17.4247L18.4536 17.9166L13.4666 14.9689L13.456 16.1942L17.3921 18.5222L16.4591 19.1314L16.438 19.1436L13.4666 17.402L13.456 18.6273L15.4029 19.7615L13.4155 20.9483L1.7973 14.0762L13.4349 7.11831L25.2344 13.9519ZM25.2344 12.7266L13.4401 5.81075L1.76561 12.7196V3.4897L13.5 2.26442L25.2344 3.4897V12.7266Z"
+          <path
+            d="M13.6426 0.515754L13.5 0.5L0 1.90733V26.5129L13.5 34.5L27 26.5129V1.90733L13.6426 0.515754ZM25.2344 25.5151L13.5 32.4573L1.76561 25.5151V15.4293L13.4507 22.3451L13.4701 23.5984L5.45351 18.8548L5.44295 20.0801L13.4894 24.8885L13.5088 26.175L5.46408 21.4174L5.45351 22.6427L13.5 27.4511L21.6239 22.6182V21.3929V17.409L25.2432 15.2595L25.2344 25.5151ZM25.2344 13.9519L22.0147 15.8319L20.5325 16.7071L13.4666 12.5201L13.456 13.7454L19.4957 17.318L19.4429 17.3495L19.3126 17.4247L18.4536 17.9166L13.4666 14.9689L13.456 16.1942L17.3921 18.5222L16.4591 19.1314L16.438 19.1436L13.4666 17.402L13.456 18.6273L15.4029 19.7615L13.4155 20.9483L1.7973 14.0762L13.4349 7.11831L25.2344 13.9519ZM25.2344 12.7266L13.4401 5.81075L1.76561 12.7196V3.4897L13.5 2.26442L25.2344 3.4897V12.7266Z"
             fill="#666666" />
         </svg>
       </div>
