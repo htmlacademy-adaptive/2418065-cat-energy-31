@@ -1,10 +1,11 @@
 .social-list {
-  @include list-reset;
+  list-style: none;
+  margin: 0;
   display: flex;
-  gap: 52px;
+  gap: 12px;
 
-  @media (min-width: 768pc) {
-    gap: 24px;
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
   }
 }
 
@@ -16,7 +17,9 @@
   position: relative;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
+
 
 .social-list__link::before {
   content: "";
