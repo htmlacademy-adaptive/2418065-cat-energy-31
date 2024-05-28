@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cat ENERGY</title>
-  <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel=" icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-180.png">
@@ -155,7 +155,7 @@
           </div>
           <div class="example__slider slider">
             <div class="slider__wrapper" style="--curtain-place: 0.5;">
-              <picture>
+              <picture class="slider__picture">
                 <source media="(min-width: 1440px)" type="image/webp" srcset="images/before-desktop@1x.webp 1x, images/before-desktop@2x.webp 2x" width="560" height="512">
                 <source media="(min-width: 768px)" type="image/webp" srcset="images/before-tablet@1x.webp 1x, images/before-tablet@2x.webp 2x" width="560" height="512">
                 <source type="image/webp" srcset="images/before-mobile@1x.webp 1x, images/before-mobile@2x.webp 2x" width="280" height="256">
@@ -163,12 +163,10 @@
                 <source media="(min-width: 768px)" type="image/png" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x" width="560" height="512">
                 <img class="slider__image slider__image--before" src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" alt="Борис ДО>" width="280" height="256" loading="lazy">
               </picture>
-              <div class="slider__curtain">
-                <button class="button" type="button">
-                  <span class="visually-hidden">Посмотрите разницу</span>
-                </button>
-              </div>
-              <picture>
+              <button class="button slider__curtain" type="button">
+                <span class="visually-hidden">Посмотрите разницу</span>
+              </button>
+              <picture class="slider__picture">
                 <source media="(min-width: 1440px)" type="image/webp" srcset="images/after-desktop@1x.webp 1x, images/after-desktop@2x.webp 2x" width="560" height="512">
                 <source media="(min-width: 768px)" type="image/webp" srcset="images/after-tablet@1x.webp 1x, images/after-tablet@2x.webp 2x" width="560" height="512">
                 <source type="image/webp" srcset="images/after-mobile@1x.webp 1x, images/after-mobile@2x.webp 2x" width="280" height="256">
