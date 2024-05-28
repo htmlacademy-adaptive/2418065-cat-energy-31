@@ -1,8 +1,7 @@
-picture,
-source {
+.slider__picture,
+.slider__picture source {
   display: contents;
 }
-
 
 .slider__wrapper {
   display: grid;
@@ -43,6 +42,7 @@ source {
   z-index: 2;
   justify-content: center;
   align-items: center;
+  transition: background-color 200ms ease-in-out;
 }
 
 .slider__curtain::before {
@@ -56,6 +56,7 @@ source {
   top: 50%;
   transform: translateY(-50%);
   left: -18px;
+  transition: border-color 200ms ease-in-out;
 }
 
 .slider__curtain::after {
@@ -67,9 +68,10 @@ source {
   top: 50%;
   transform: translateY(-50%);
   left: -10px;
-  mask-image: url("../../icons/slider.svg");
+  mask-image: url("../../icons/stack.svg#slider");
   mask-repeat: no-repeat;
   mask-position: center;
+  transition: background-color 200ms ease-in-out;
 }
 
 .slider__curtain:hover,
@@ -80,6 +82,16 @@ source {
 .slider__curtain:hover::before {
   border-color: $bg-theme;
 }
+
+.slider__curtain:focus-visible,
+.slider__curtain:focus-visible::after {
+  background-color: $bg-theme;
+}
+
+.slider__curtain:focus-visible::before {
+  border-color: $bg-theme;
+}
+
 
 .slider__curtain:active {
   opacity: 0.5;
