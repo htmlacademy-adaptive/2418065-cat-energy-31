@@ -70,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $bg-light-theme;
+    background-color: $basic-grey;
   }
 
   &--time {
@@ -79,7 +79,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      box-shadow: -10px 0 0 0 $bg-light-theme, 10px 0 0 0 $bg-light-theme;
+      box-shadow: -10px 0 0 0 $basic-grey, 10px 0 0 0 $basic-grey;
     }
   }
 }

@@ -1,5 +1,5 @@
 .diet__wrapper {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-top: -83px;
@@ -7,8 +7,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -143px;
     margin-bottom: 70px;
+    margin-top: 53px;
   }
 }
 
@@ -32,17 +32,18 @@
 
 .diet__item {
   background-color: $basic-grey;
-  padding: 24px 20px;
+  padding: 24px 20px 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 63px 65px 52px;
+    padding: 77px 63px 60px 52px;
     min-width: 708px;
     text-align: left;
+    color: $second-text-color;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 52px 65px;
+    padding: 47px 52px 60px;
     min-width: auto;
     max-width: 570px;
   }
@@ -155,7 +156,7 @@
 .diet__desc {
   padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 
 
   @media (min-width: $tablet-width) {
@@ -164,12 +165,12 @@
     line-height: 24px;
     border-bottom: none;
     max-width: 58%;
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 460px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -178,8 +179,7 @@
 
   font-family: $secondary-font;
   font-size: 16px;
-  line-height: 16px;
-  width: 170px;
+  line-height: 20px;
   display: flex;
   gap: 16px;
   align-items: center;
@@ -187,23 +187,28 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 25px;
     gap: 28px;
+    width: 300px;
   }
 }
 
 .diet__link::after {
   content: "";
-  width: 24px;
-  height: 13px;
-  background-image: url("../../icons/stack.svg#arrow-short");
-  background-repeat: no-repeat;
+  width: 32px;
+  height: 12px;
+  flex-shrink: 0;
+  mask-image: url("../../icons/stack.svg#arrow-long");
+  mask-repeat: no-repeat;
+  mask-size: 24px 12px;
+  mask-position: 0;
+  background-color: $second-text-color;
   transition: all 200ms ease-in-out;
 }
 
 .diet__link:hover::after,
 .diet__link:focus-visible::after {
-  width: 32px;
-  background-image: url("../../icons/stack.svg#arrow-long");
+  mask-size: 32px 12px;
 }
 
 .diet__link:active {

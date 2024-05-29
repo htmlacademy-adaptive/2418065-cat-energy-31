@@ -1,5 +1,5 @@
 .footer {
-  background-color: $bg-light-theme;
+  background-color: $basic-grey;
 }
 
 .footer__wrapper {
@@ -41,6 +41,7 @@
 .footer__social {
   padding: 10px 0;
   width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
