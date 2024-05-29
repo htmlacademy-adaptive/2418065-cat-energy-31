@@ -11,12 +11,14 @@
 
 .stats__list {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   gap: 32px;
   margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     gap: 43px;
+    max-width: 500px;
   }
 }
 
@@ -70,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $bg-light-theme;
+    background-color: $basic-grey;
   }
 
   &--time {
@@ -79,7 +81,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      box-shadow: -10px 0 0 0 $bg-light-theme, 10px 0 0 0 $bg-light-theme;
+      box-shadow: -10px 0 0 0 $basic-grey, 10px 0 0 0 $basic-grey;
     }
   }
 }
