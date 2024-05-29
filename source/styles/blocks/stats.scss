@@ -11,12 +11,14 @@
 
 .stats__list {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   gap: 32px;
   margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     gap: 43px;
+    max-width: 500px;
   }
 }
 
